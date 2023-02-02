@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai Tap Lab 4</title>
+    <script src="./angularjs/libs/angular.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggoyr0ixcbmqv3xipma34md+dh/1fq784/j6cy/ijtquohcwr7x9jvorxt2mzw1t"
+    crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " 
+    integrity="sha384-q8i/x+965dzo0rt7abk41jstqiaqvgrvzpbzo5smxkp4yfrvh+8abtte1pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" 
+    integrity="sha384-uo2et0cphqdsjq6hjty5kvphtphzwj9wo1clhtmga3jdzwrnqq4sf86dihndz0w1&rlz=1C1UEAD_enVN988VN988&oq=sha384-U&aqs=chrome.4.69i57j0i30i625j0i30l2j0i30i625j0i8i30l2j0i8i10i30j0i8i30j0i8i30i625.24935j0j7&sourceid=chrome&ie=UTF-8" 
+    crossorigin="anonymous"></script>
+    
+</head>
+
+<body ng-app="myapp">
+    <!-- <div ng-controller="myctrl">
+        <ul>
+            <li>Ho va Ten: {{fullname}}</li>
+            <li>Ngay Sinh: {{birthday}}</li>
+            <li>Gioi Tinh: {{gender}}</li>
+            <li>Diem Trung Binh: {{mark}}</li>
+        </ul>
+
+        <!-- //Hien thi thong tin sinh vien o day -->
+    <!-- </div>
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller("myctrl", function ($scope) {
+            $scope.fullname = "Le Huynh Duc";
+            $scope.birthday = "29-04-2003";
+            $scope.gender = "Nam";
+            $scope.mark = 9.4;
+        });
+    </script> -->
+
+    <!-- <div ng-controller="myctrl">
+        <ul>
+            <li>Ho va Ten: {{student.fullname}}</li>
+            <li>Ngay Sinh: {{student.birthday}}</li>
+            <li>Gioi Tinh: {{student.gender}}</li>
+            <li>Diem Trung Binh: {{student.mark}}</li>
+        </ul>
+
+        <!-- //Hien thi thong tin sinh vien o day -->
+    <!-- </div>
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller("myctrl", function ($scope) {
+            $scope.student = {
+                fullname : "Le Huynh Duc",
+                birthday : "29-04-2003",
+                gender : "Nam",
+                mark : 9.4
+            }
+        });
+    </script> -->
+
+    <!-- <div ng-controller="myctrl">
+        <table class="table table-bordered table-condensed">
+            <tr>
+                <th>Ho va Ten</th>
+                <th>Ngay Sinh</th>
+                <th>Gioi Tinh</th>
+                <th>Diem</th>
+            </tr>
+            <tr>
+                <td>{{student[0].fullname}}</td>
+                <td>{{student[0].birthday}}</td>
+                <td>{{student[0].gender}}</td>
+                <td>{{student[0].mark}}</td>
+            </tr>
+            <tr>
+                <td>{{student[1].fullname}}</td>
+                <td>{{student[1].birthday}}</td>
+                <td>{{student[1].gender}}</td>
+                <td>{{student[1].mark}}</td>
+            </tr>
+            <tr>
+                <td>{{student[2].fullname}}</td>
+                <td>{{student[2].birthday}}</td>
+                <td>{{student[2].gender}}</td>
+                <td>{{student[2].mark}}</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        var app = angular.module("myapp", []);
+        app.controller("myctrl", function ($scope) {
+            $scope.student = [
+                {
+                    fullname: "Le Huynh Duc",
+                    birthday: "29-04-2003",
+                    gender: "Nam",
+                    mark: 9.4
+                },
+                {
+                    fullname: "Le Bao Ngoc",
+                    birthday: "29-04-2015",
+                    gender: "Nam",
+                    mark: 9.4
+                },
+                {
+                    fullname: "Le Huynh Duc",
+                    birthday: "29-04-2003",
+                    gender: "Nam",
+                    mark: 9.4
+                },
+
+            ]
+        });
+    </script> -->
+    <form action="">
+        <div class="form-group" >
+            <label for="">Chieu dai</label>
+            <input ng-model="length" class="form-control">
+        </div>
+        <div class="form-group" >
+            <label for="">Chieu rong</label>
+            <input ng-model="width" class="form-control">
+        </div>
+        <div class="form-group" >
+            <label for="">Dien tich</label>
+            <input ng-bind="acreage" class="form-control">
+        </div>
+        <div class="form-group" >
+            <label for="">Chu vi</label>
+            <input ng-model="preimeter" class="form-control">
+        </div>
+        <hr>
+        <div class="form-group">
+            <button class="btn btn-default" onclick="calculate()"> Calculate</button>
+        </div>
+    </form>
+    <script>
+
+    </script>
+
+</body>
+
+</html>  -->

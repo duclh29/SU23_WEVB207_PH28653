@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logic</title>
+</head>
+
+<body ng-app="angularjs-logic">
+    <div ng-controller="loopController">
+        <ul>
+            <!-- users là mảng khai báo ở $scope -->
+            <!-- user là phần tử ở mỗi vòng lặp -->
+            <li ng-repeat="user in users">
+                <p>Mã người dùng: {{user.id}}</p>
+                <p>Tên: {{user.name}}</p>
+                <p>Email: {{user.email}}</p>
+                <p>Avartar: {{user.avatar}}</p>
+                <p>Status: {{user.status}}</p>
+            </li>
+        </ul>
+        <table >
+            <thead>
+                <tr>
+                    <th>Mã người dùng</th>
+                    <th>Tên người dùng</th>
+                    <th>Email</th>
+                    <th>Avatar</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users"> 
+                    <td>{{user.id}}</td>
+                    <td>{{user.name}}</td>
+                    <td>{{user.email}}</td>
+                    <td><img src="data:image/jpeg;base64,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" alt="1.png"></td>
+                    <td>{{
+                        user.status
+                        ? 'Kích hoạt'
+                        : 'Không kích hoạt'
+                        }}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <script src="./angularjs/libs/angular.min.js"></script>
+    <script>
+        var app = angular.module('angularjs-logic', []);
+        //loopController
+        app.controller('loopController', function ($scope) {
+            $scope.users = [
+                { id: 1, name: 'Nguyen Van A', email: 'lehuynhduc150303@gmail.com',avatar: '1.png', status: 0 },
+                { id: 2, name: 'Nguyen Van B', email: 'lehuynhduc150303@gmail.com',avatar: '2.png', status: 1 }
+            ];
+        });
+    </script>
+</body>
+
+</html>
